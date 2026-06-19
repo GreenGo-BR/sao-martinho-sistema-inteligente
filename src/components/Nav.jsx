@@ -3,14 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
   { href: '#visao', label: 'Visão' },
-  { href: '#equipe', label: 'Equipe' },
+  { href: '#equipe-estrategia', label: 'Equipe' },
   { href: '#dashboard', label: 'Dashboard' },
-  { href: '#ia', label: 'IA' },
-  { href: '#realidade', label: 'Realidade' },
+  { href: '#ia', label: 'Motor IA' },
+  { href: '#jornada', label: 'Jornada' },
+  { href: '#custo-inacao', label: 'Custo' },
   { href: '#futuro', label: 'Futuro' },
   { href: '#integracao', label: 'Integração' },
   { href: '#internacional', label: 'Internacional' },
   { href: '#seo', label: 'SEO/GEO' },
+  { href: '#2030', label: '2030' },
   { href: '#plano', label: '12 meses' },
   { href: '#metricas', label: 'Métricas' },
 ]

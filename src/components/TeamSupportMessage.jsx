@@ -33,7 +33,7 @@ export default function TeamSupportMessage() {
           O papel da equipe de comunicação continua essencial
         </h2>
         <p className="text-white/65 text-lg leading-relaxed max-w-3xl mb-8">
-          Esta proposta <strong className="text-white">não substitui</strong> a equipe de comunicação. O objetivo é agregar tecnologia, automação, dados e IA para ampliar o trabalho que a equipe já realiza. A comunicação continua sendo protagonista; o Centro de Inteligência Social funciona como um acelerador — transformando alcance, conteúdo e relacionamento em doações, recorrência e impacto mensurável.
+          Esta proposta <strong className="text-white">não substitui</strong> a equipe de comunicação. O objetivo é agregar tecnologia, automação, dados e IA para ampliar o trabalho que a equipe já realiza. A comunicação continua sendo protagonista; o Motor de Arrecadação funciona como um acelerador — transformando alcance, conteúdo e relacionamento em doações, recorrência e impacto mensurável.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">

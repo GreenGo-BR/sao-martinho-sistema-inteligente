@@ -1,31 +1,8 @@
 import { motion } from 'framer-motion'
-import { useEffect, useRef } from 'react'
-
-function AnimatedNumber({ value, suffix = '', prefix = '' }) {
-  const ref = useRef(null)
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const target = parseFloat(value.replace(/[^\d.]/g, ''))
-    const isFloat = value.includes('.')
-    let start = 0
-    const dur = 1800
-    const startTime = performance.now()
-    const tick = (now) => {
-      const progress = Math.min((now - startTime) / dur, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      const current = start + (target - start) * eased
-      el.textContent = prefix + (isFloat ? current.toFixed(1) : Math.floor(current).toLocaleString('pt-BR')) + suffix
-      if (progress < 1) requestAnimationFrame(tick)
-    }
-    requestAnimationFrame(tick)
-  }, [value, suffix, prefix])
-  return <span ref={ref}>{prefix}0{suffix}</span>
-}
 
 const stats = [
   { label: 'CRM', sub: 'base única de doadores', color: '#39d98a', icon: '🗄️' },
-  { label: 'IA', sub: 'apoio à comunicação', color: '#45b7ff', icon: '🤖' },
+  { label: 'Automação', sub: 'relacionamento em escala', color: '#45b7ff', icon: '⚡' },
   { label: 'SEO/GEO', sub: 'visibilidade Google e IA', color: '#a78bfa', icon: '🔍' },
   { label: 'Global', sub: 'doação nacional e exterior', color: '#ffd166', icon: '🌎' },
 ]
@@ -74,7 +51,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-[clamp(38px,6.5vw,78px)] font-black leading-[0.95] tracking-tight mb-5"
         >
-          <span className="gradient-text">Centro de Inteligência Social</span>
+          <span className="gradient-text">Motor de Arrecadação</span>
           <br />
           <span className="text-white">São Martinho</span>
         </motion.h1>
@@ -83,9 +60,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-xl text-white/70 max-w-3xl leading-relaxed"
+          className="text-xl text-white/75 max-w-3xl leading-relaxed font-medium"
         >
-          Uma estrutura integrada para comunicação, captação e relacionamento com doadores. Conectar site, redes sociais, CRM, e-mails, campanhas, SEO/GEO, doações nacionais e internacionais em um sistema inteligente para ampliar arrecadação e impacto social.
+          Uma estrutura integrada que transforma comunicação em relacionamento, relacionamento em confiança e confiança em arrecadação sustentável.
         </motion.p>
 
         <motion.div
@@ -99,7 +76,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-[#04111d] transition-transform hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #39d98a, #45b7ff)', boxShadow: '0 20px 60px rgba(57,217,138,0.3)' }}
           >
-            Ver dashboard ilustrativo
+            Ver dashboard executivo
           </a>
           <a
             href="#equipe"

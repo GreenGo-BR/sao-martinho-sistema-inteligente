@@ -11,7 +11,7 @@ const aiCards = [
     value: '+312%',
     valueLabel: 'de conversão',
     desc: 'Campanha com storytelling do projeto de culinária profissional gerou o maior volume de doações recorrentes do trimestre.',
-    highlight: 'rgba(57,217,138,0.08)',
+    highlight: 'rgba(57,217,138,0.07)',
     border: 'rgba(57,217,138,0.18)',
   },
   {
@@ -87,7 +87,7 @@ export default function IntelligenceCenter() {
           </span>
         </div>
         <h2 className="text-[clamp(28px,4.5vw,46px)] font-black tracking-tight leading-tight">
-          São Martinho Intelligence <span className="gradient-text">AI</span>
+          Motor <span className="gradient-text">IA</span>
         </h2>
         <p className="text-white/55 text-base mt-2 max-w-2xl">
           Motor de IA que analisa dados de doadores, campanhas e canais para gerar recomendações acionáveis — sempre com revisão humana da equipe de comunicação.
@@ -111,7 +111,7 @@ export default function IntelligenceCenter() {
             🤖
           </div>
           <div>
-            <strong className="block font-black text-base">São Martinho AI</strong>
+            <strong className="block font-black text-base">Motor IA — São Martinho</strong>
             <span className="text-white/40 text-xs">Última análise: hoje às 08:42</span>
           </div>
           <div
@@ -152,7 +152,7 @@ export default function IntelligenceCenter() {
             </motion.div>
           ))}
 
-          {/* Last card: AI disclaimer */}
+          {/* Supervisão humana */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -165,7 +165,7 @@ export default function IntelligenceCenter() {
               <div className="text-2xl mb-3">⚖️</div>
               <h3 className="font-bold text-base mb-2">Sempre com supervisão humana</h3>
               <p className="text-white/50 text-sm leading-relaxed">
-                Todas as recomendações da IA são sugestões. A equipe de comunicação valida, adapta e decide o que será executado.
+                Todas as recomendações do Motor IA são sugestões. A equipe de comunicação valida, adapta e decide o que será executado.
               </p>
             </div>
             <div

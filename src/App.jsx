@@ -1,10 +1,13 @@
 import Particles from './components/Particles'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import EquipeEstrategia from './components/EquipeEstrategia'
 import TeamSupportMessage from './components/TeamSupportMessage'
 import ExecutiveDashboard from './components/ExecutiveDashboard'
 import IntelligenceCenter from './components/IntelligenceCenter'
+import DonorJourney from './components/DonorJourney'
 import CurrentReality from './components/CurrentReality'
+import CostOfInaction from './components/CostOfInaction'
 import FutureVision from './components/FutureVision'
 import CommunicationFlow from './components/CommunicationFlow'
 import InternationalDonations from './components/InternationalDonations'
@@ -42,10 +45,13 @@ export default function App() {
 
       <main className="relative z-10 max-w-[1240px] mx-auto px-4 md:px-6 pb-24">
         <Hero />
+        <EquipeEstrategia />
         <TeamSupportMessage />
         <ExecutiveDashboard />
         <IntelligenceCenter />
+        <DonorJourney />
         <CurrentReality />
+        <CostOfInaction />
         <FutureVision />
         <CommunicationFlow />
         <InternationalDonations />
