@@ -15,6 +15,7 @@ import SeoGeo from './components/SeoGeo'
 import NationalNGOVision from './components/NationalNGOVision'
 import Roadmap from './components/Roadmap'
 import Metrics from './components/Metrics'
+import Investment from './components/Investment'
 import FinalCTA from './components/FinalCTA'
 
 export default function App() {
@@ -59,6 +60,7 @@ export default function App() {
         <NationalNGOVision />
         <Roadmap />
         <Metrics />
+        <Investment />
         <FinalCTA />
       </main>
     </div>

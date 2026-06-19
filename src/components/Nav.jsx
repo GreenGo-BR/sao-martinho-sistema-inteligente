@@ -15,6 +15,7 @@ const links = [
   { href: '#2030', label: '2030' },
   { href: '#plano', label: '12 meses' },
   { href: '#metricas', label: 'Métricas' },
+  { href: '#investimento', label: 'Investimento' },
 ]
 
 export default function Nav() {
